@@ -1,17 +1,17 @@
 // Задание 1
-   let a=Number(10);
+   let a=10;
    alert(a);
-   a=Number(20);
+   a=20;
    alert(a);
 // Задание 2
-   let yearRelease=Number(2007);
+   let yearRelease=2007;
    alert(`год выпуска первого iPhone: ${yearRelease}`);
 // Задание 3
-   let nameAuthor=String(`Брендан`);
+   let nameAuthor=`Брендан`;
    alert(`Имя создателя языка JavaScript: ${nameAuthor}`);
 // Задание 4
-   let b=Number(10);
-   let c=Number(2);
+   let b=10;
+   let c=2;
    let sum=(b+c);
    alert(`Сумма: ${sum}`);
    let difference=(b-c);
@@ -24,8 +24,8 @@
     let result=(2**5);
     alert(`Возведение 2 в 5-ю степень: ${result}`);
 // Задание 6
-    let a=Number(9);
-    let b=Number(2);
+    let a=9;
+    let b=2;
     let divide=(a%b);
     alert(`Остаток от деления: ${divide}`);
 // Задание 7
@@ -34,8 +34,8 @@
    num -=  3;
    num *=  7;
    num /=  3;
-   num = ++num ;
-   num = --num ;
+   num ++  ;
+   num -- ;
    alert(num);
 //    Задание 8
    let age=prompt(`Сколько вам лет?`);
