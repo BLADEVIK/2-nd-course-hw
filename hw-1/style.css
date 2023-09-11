@@ -41,6 +41,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 32px;
+    width: 481px;
    }
    .header__description--big{
     color: #FFF;
@@ -70,10 +71,11 @@
    }
    .head__bottom{
     padding-top: 128px;
+    padding-bottom: 128px;
     display: flex;
     flex-wrap: wrap;
     gap: 31px;
-    height: 556px;
+    height: 100%;
     background: #000915;
    }
    .bottom__image{
@@ -83,7 +85,6 @@
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    border: 2px solid black;
     transition: all .3s;
    }
    .bottom__image:hover{
@@ -102,6 +103,48 @@
     font-style: normal;
     font-weight: 600;
     line-height: 32px; /* 133.333% */
+   }
+  
+   /* Адаптив под мобильное устройство */
+   @media(max-width:767px) {
+    .header__top{
+      display: flex;
+      flex-direction: column;
+      height: 735px;
+      width: 100%;
+      background-image: url(images/fone_top-mobile.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .header__title{
+      text-align: center;
+      font-size: 32px;
+      padding-top: 238px;
+    }
+    .header__description{
+      align-self: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      width: 343px;
+    }
+    .container__btn{
+      display: flex;
+      justify-content: center;
+    }
+    .head__bottom{
+      height: 1221px;
+      justify-content: center;
+    }
+    
+    .bottom__image{
+     width: 343px;
+     height: 274px;
+    }
+    .image_fone{
+      width: 343px;
+    }
    }
    
 
