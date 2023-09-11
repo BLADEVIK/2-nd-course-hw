@@ -135,9 +135,12 @@
     }
     .head__bottom{
       height: 1221px;
+      display: flex;
       justify-content: center;
     }
     
+   }
+   @media(min-width:320px) and (max-width:343px){
     .bottom__image{
      width: 343px;
      height: 274px;
@@ -145,7 +148,8 @@
     .image_fone{
       width: 343px;
     }
-   }
+  }
+   
    
 
    
