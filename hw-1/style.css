@@ -122,7 +122,7 @@
     gap: 127px;
     padding-top: 243px;
    }
-   .image__game1{
+   .image__game{
     width: 485px;
     height: 333px;
    }
@@ -172,6 +172,10 @@
 
    /* Адаптив под мобильное устройство */
    @media(max-width:767px) {
+    .center{
+      padding-left: 14px;
+      padding-right: 14px;
+    }
     .header__top{
       display: flex;
       flex-direction: column;
@@ -182,12 +186,15 @@
       background-size: cover;
       background-position: center;
     }
-    .header__title{
+    .title{
       text-align: center;
       font-size: 32px;
       padding-top: 238px;
     }
-    .header__description{
+    .game__title{
+      padding-top: 0;
+    }
+    .description{
       align-self: center;
       text-align: center;
       font-size: 14px;
@@ -203,7 +210,24 @@
       display: flex;
       justify-content: center;
     }
-    
+   .container__game{
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+    align-content: center;
+    gap: 64px;
+   }
+   .image__game{
+    width: 344px;
+    height: 236px;
+   } 
+   .game__riddle{
+    padding-top: 0;
+   }
+   .game__riddle-title{
+    padding-top: 51px;
+   }
    }
    @media(min-width:320px) and (max-width:343px){
     .bottom__image{
