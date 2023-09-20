@@ -1,6 +1,6 @@
 // Задание 1
 function difference(a, b){ 
-    if ((a < b) || (a===b)) {
+    if (a <= b) {
       return a ;  
     }
     else{
@@ -11,31 +11,33 @@ console.log(difference(8, 4));
 // Задание 2
 function evenNumber(n) {
    if(n % 2===0){
-     console.log(`Число четное`);
+     return (`Число четное`);
    }
    else {
-     console.log(`Число нечетное`);
+     return (`Число нечетное`);
    }
 }
-console.log(evenNumber(21));
+console.log(evenNumber(22));
 // Задание 3
 const degreeNumber = a =>  {
-    return a**2;
+    let numberSquare=a**2;
+    console.log(numberSquare);
+    return(numberSquare);
 }
-console.log(degreeNumber(9));
+console.log(degreeNumber(6));
 // Задание 4
 function ageUser(a) {
     if (a < 0) {
        console.log(`Вы ввели неправильное значение`) ;
     }
-    if ((a <= 12) && (a > 0) ){
+    else if ((a <= 12) && (a > 0) ){
         console.log(`Привет, друг!`);
     }
     else {
         console.log(`Добро пожаловать!`);
     }
 }
-  console.log(ageUser(12));
+  ageUser(-1)
 // Задание 5
 function dataUser(a, b) {
     if ((isNaN(a) ) || (isNaN(b))) {
@@ -47,15 +49,16 @@ function dataUser(a, b) {
 }
      console.log(dataUser(7, 5));
 // Задание 6
- const numberUser = n => {
-    if (isNaN(n)) {
-       console.log(`Переданный параметр не является числом`);
-    }
-    else {
-        return n**3;
-    }
-}
-console.log (numberUser(4));
+ function numberUser() {
+  let numCube = prompt(`Введите число`);
+  if (!isNaN(numCube)){
+    return console.log(`${numCube} в кубе ровняется ${numCube**3}`);
+  }
+  else{
+    return console.log(`Переданный параметр не является числом`);
+  }
+ }
+ numberUser();
 // Задание 7
 function getRectangleArea() {
     return this.radius ** 2 * 3.14;

@@ -205,6 +205,16 @@
       display: flex;
       justify-content: center;
     }
+
+    .bottom__image{
+      width: 343px;
+      height: 300px;
+     }
+     .image_fone{
+       width: 100%;
+       height: 100%;
+     }
+
     .head__bottom{
       height: 1221px;
       display: flex;
@@ -232,10 +242,11 @@
    @media(min-width:320px) and (max-width:343px){
     .bottom__image{
      width: 343px;
-     height: 274px;
+     height: 300px;
     }
     .image_fone{
-      width: 343px;
+      width: 100%;
+      height: 100%;
     }
   }
    
