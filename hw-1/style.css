@@ -26,14 +26,17 @@
    .header__title{
     padding-top: 217px;
     margin-bottom: 32px;
+   }
+   .title{
     color: #FFF;
     font-family: Montserrat;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 32px;
    }
-   .header__description{
+   .description{
     margin-bottom: 34px;
     color: #FFF;
     font-family: Montserrat;
@@ -43,7 +46,7 @@
     line-height: 32px;
     width: 481px;
    }
-   .header__description--big{
+   .description-span{
     color: #FFF;
     font-family: Montserrat;
     font-size: 18px;
@@ -51,7 +54,13 @@
     font-weight: 700;
     line-height: 32px;
    }
-   .header__btn{
+   .game__description{
+    width: 502px;
+   }
+   .block__description{
+    width: 588px;
+   }
+   .btn{
     box-sizing: border-box;
     border-radius: 30px;
     background: #9C0332;
@@ -66,7 +75,7 @@
     flex-shrink: 0;
     transition: all .4s;
    }
-   .header__btn:hover{
+   .btn:hover{
     background: #EB443F;
    }
    .head__bottom{
@@ -104,7 +113,63 @@
     font-weight: 600;
     line-height: 32px; /* 133.333% */
    }
+   
+   .container__game{
+    height: 800px;
+    background: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 127px;
+    padding-top: 243px;
+   }
+   .image__game1{
+    width: 485px;
+    height: 333px;
+   }
+   
+   .save-word{
+    display: flex;
+    flex-direction: row-reverse;
+   }
+   
+   .game__riddle{
+    padding-top: 276px;
+    height: 800px;
+    background-image:url(images/game-3-fone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
+   .container__riddle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .game__riddle-description{
+    
+    text-align: center;
+    width: 100%;
+   }
+   .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #000915;
+   }
+   .footer-text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   }
+   
   
+    
+  
+
    /* Адаптив под мобильное устройство */
    @media(max-width:767px) {
     .header__top{
