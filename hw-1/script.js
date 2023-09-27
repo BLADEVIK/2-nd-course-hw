@@ -22,9 +22,32 @@
     else {
         alert(`Неверно введен месяц`)
     }
-}
-     
+};
+function gameFruit(){ 
+const gamesArray = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+let gamesArrayNew = gamesArray.sort(() => Math.random() - 0.5);
+alert(`Выбери первый и последний элемент: `+ gamesArrayNew);
+for (let i = 0; i < gamesArrayNew.length; i++) {
+    let firstFruit = gamesArrayNew[0];
+    let lastFruit = gamesArrayNew[6];
+    let userFirstFruit = prompt(`Чему равнялся первый элемент массива?`);
+    let userLastFruit = prompt(`Чему равнялся последний элемент массива?`);
+    if ((firstFruit.toLowerCase() === userFirstFruit.toLowerCase()) && (lastFruit.toLowerCase() === userLastFruit.toLowerCase())) {
+       alert(`угадал оба элемента`) 
+       break
+    }
+    else if ((firstFruit.toLowerCase() !== userFirstFruit.toLowerCase()) && (lastFruit.toLowerCase() !== userLastFruit.toLowerCase())){
+        alert(`Оба ответа неверны`)
+        break
+    }
+    else {
+        alert(`Вы были близки к победе!`)
+        break
+    }
     
+}
+}   
+   
 
 
 
