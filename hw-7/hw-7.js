@@ -2,13 +2,18 @@
 console.log(`Hello World`.toUpperCase());
 
 // Задание 2
-const array = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const search = `ко`
+function searchStart(array, searchPhrase){
+    let newArray = [];
 array.forEach(element => {
-    if (element.toLowerCase().startsWith(search.toLowerCase())) {
-		console.log(element);
+    if (element.toLowerCase().startsWith(searchPhrase.toLowerCase())) {
+		newArray.push(element);    
 	} 
 });
+return newArray; 
+}
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'));
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'));
 
 // Задание 3
 console.log(Math.floor(32.58884));
@@ -58,6 +63,7 @@ currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
 
 // Задание 10
+function userDate(){
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 let myDate = new Date(); 
@@ -68,6 +74,9 @@ let second = myDate.getSeconds();
 console.log(fullDate); 
 
 console.log(`${hour}:${minute}:${second}`);
+}
+
+userDate()
 
 // Задание 11
 function gameFruit(){ 
