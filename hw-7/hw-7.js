@@ -63,20 +63,18 @@ currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
 
 // Задание 10
-function userDate(){
+function userDate(date){
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-let myDate = new Date(); 
-let fullDate =( `${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()}  ${days[myDate.getDay()]}`);
-let hour = myDate.getHours(); 
-let minute = myDate.getMinutes();
-let second = myDate.getSeconds();
-console.log(fullDate); 
-
-console.log(`${hour}:${minute}:${second}`);
+ 
+let fullDate =( `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}  ${days[date.getDay()]}`);
+let hour = date.getHours(); 
+let minute = date.getMinutes();
+let second = date.getSeconds();
+return (`${fullDate} ${hour}:${minute}:${second}`);
 }
-
-userDate()
+const myDate = new Date();
+console.log(userDate(myDate))
 
 // Задание 11
 function gameFruit(){ 
